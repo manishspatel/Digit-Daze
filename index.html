@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Digit Daze</title>
+    <style>
+        /* Basic Reset */
+        body, h1, h2, p, footer {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header img {
+            height: 80px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: #f80;
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        /* Horizontal Line After Nav */
+        hr {
+            border: none;
+            border-top: 3px solid yellow;
+            margin: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('images/MSP.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            color: #f80;
+            margin-bottom: 20px;
+        }
+
+        .hero-message {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 5px #000;
+            margin-bottom: 30px;
+        }
+
+        .download-btn {
+            padding: 15px 30px;
+            background-color: rgb(255, 0, 21);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            margin-top: 610px;
+            margin-right: 630px;
+            
+        }
+
+        .download-btn:hover {
+            background-color: #dc1717;
+            transform: scale(1.1);
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #222;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .features h2 {
+            font-size: 3em;
+            color: #f80;
+            margin-bottom: 20px;
+        }
+
+        .features p {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+
+        /* New Layout for Points on Right and Video on Left */
+        .feature-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+
+        .feature-points {
+            flex: 1;
+            text-align: left;
+            padding-left: 20px;
+            color: #fff;
+        }
+
+        .feature-points h3 {
+            font-size: 2.5em;
+            color: #e43434;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .feature-points ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.5em;
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+
+        .feature-points ul li {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            font-weight: bold;
+            color: #527cbd;
+            text-transform: capitalize;
+        }
+
+        .feature-points ul li::before {
+            content: '\1F3AE';
+            position: absolute;
+            left: 0;
+            font-size: 1.0 em;
+            top: 0;
+            color: #ff8c00;
+        }
+
+        .feature-video {
+            flex: 1;
+            text-align: center;
+            padding-right: 20px;
+        }
+
+        .feature-video video {
+            width: 110%;
+            max-width: 700px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        /* Styling the "Download Now" Button */
+        .download-btn {
+            background-color: #f80;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .download-btn:hover {
+            background-color: #f60;
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
+        }
+
+        /* Interactive Hover Effects */
+        .feature-points h3:hover {
+            color: #ffcc00;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .download-btn:hover {
+            background-color: #f60;
+            box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Digit Daze Logo"> <!-- Replace with your logo -->
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="">Download</a>
+            <a href="3.html">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Yellow Line -->
+    <hr>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            
+            
+            <a href="app.apk" download class="download-link">
+                <button class="download-btn">Download Now</button>
+              </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Features of the App</h2>
+        <p>Experience the thrill of the most exciting number guessing game. Play anywhere, anytime!</p>
+        
+        <!-- Feature Content with Video on Left and Points on Right -->
+        <div class="feature-content">
+            <div class="feature-video">
+                <video autoplay muted loop controls>
+                    <source src="images/MSP.mp4" type="video/mp4"> <!-- Replace with your video path -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="feature-points">
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Engaging Gameplay: A fun and intuitive interface that makes guessing numbers both exciting and challenging for players of all ages.</li>
+                    <li>Multiplayer Mode: Compete with friends and family in real-time guessing challenges to see who can guess the number first.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Developed by MSP | &copy; 2024 Digit Daze</p>
+    </footer>
+</body>
+</html>
